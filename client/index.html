@@ -47,7 +47,7 @@
   </head>
   <body>
     <div class="container" ng-controller="ChatController">
-      <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar navbar-fixed-top navbar-inverse bg-primary">
         <div class="navbar-inner">
           <div class="pull-right">
             <a href="https://educ.ucol.mx/" class="brand">Plataforma Educ</a>
@@ -60,7 +60,7 @@
       <div class="row">
         <div class="span3">
           <ul class="nav nav-list well">
-            <li class="nav-header">Usuarios locales</li>
+            <li class="nav-header bg-dark">Usuarios locales</li>
             <li ng-repeat="user in roster" ng-bind="user">
             </li>
           </ul>
@@ -85,7 +85,7 @@
               <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>
               <div class="input-append span7">
                 <input type="text" class="span6" ng-model="text" placeholder="Message">
-                <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">
+                <input type="submit" class="span1 btn btn-success" value="Send" ng-disabled="!text">
               </div>
             </form>
           </div>
